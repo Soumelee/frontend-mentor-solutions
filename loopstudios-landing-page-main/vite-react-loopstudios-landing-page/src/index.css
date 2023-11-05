@@ -142,7 +142,7 @@ nav a img{
   padding: 1rem 3rem;
   margin: 1rem auto;
 }
-.creations .heading button:hover,.mobileButton:active{
+.creations .heading button:hover,.mobileButton:hover, .mobileButton:active{
   color: var(--White);
   background-color: var(--Black);
   border: 2px solid var(--Black);

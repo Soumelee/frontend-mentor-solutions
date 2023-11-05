@@ -1,15 +1,21 @@
 // import React from 'react'
+import facebook from '../assets/images/icon-facebook.svg';
+import twiter from '../assets/images/icon-twitter.svg';
+import pinterest from '../assets/images/icon-pinterest.svg';
+import instagram from '../assets/images/icon-instagram.svg';
+
+import logo from '../assets/images/logo.svg';
 
 export default function Footer() {
   return (
     <footer>
       <div className="socials">
-        <a><img src="../src/assets/images/logo.svg" alt="loopstudios" /></a>
-        <ul>                   
-          <li><img src="../src/assets/images/icon-facebook.svg" alt="facebook" /></li>
-          <li><img src="../src/assets/images/icon-twitter.svg" alt="twiter" /></li>
-          <li><img src="../src/assets/images/icon-pinterest.svg" alt="pinterest" /></li>
-          <li><img src="../src/assets/images/icon-instagram.svg" alt="instagram" /></li>
+        <a><img src={logo} alt="loopstudios" /></a>
+        <ul>
+          <li><img src={facebook} alt="facebook" /></li>
+          <li><img src={twiter} alt="twiter" /></li>
+          <li><img src={pinterest} alt="pinterest" /></li>
+          <li><img src={instagram} alt="instagram" /></li>
         </ul>
       </div>
       <div className="pages">
@@ -23,12 +29,12 @@ export default function Footer() {
         <span>© 2021 Loopstudios. All rights reserved.</span>
       </div>
 
-      <div className="socialsMobile">        
-        <ul>                   
-          <li><img src="../src/assets/images/icon-facebook.svg" alt="facebook" /></li>
-          <li><img src="../src/assets/images/icon-twitter.svg" alt="twiter" /></li>
-          <li><img src="../src/assets/images/icon-pinterest.svg" alt="pinterest" /></li>
-          <li><img src="../src/assets/images/icon-instagram.svg" alt="instagram" /></li>
+      <div className="socialsMobile">
+        <ul>
+          <li><img src={facebook} alt="facebook" /></li>
+          <li><img src={twiter} alt="twiter" /></li>
+          <li><img src={pinterest} alt="pinterest" /></li>
+          <li><img src={instagram} alt="instagram" /></li>
         </ul>
       </div>
 

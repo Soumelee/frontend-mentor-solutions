@@ -1,5 +1,7 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
+import imageInteractiveMobile from '../assets/images/mobile/image-interactive.jpg';
+import imageInteractiveDesktop from '../assets/images/desktop/image-interactive.jpg';
 
 export default function About() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -18,10 +20,11 @@ export default function About() {
 
   return (
     <div className='about'>
-      {windowWidth <= 425 ? (
-        <img src="../src/assets/images/mobile/image-interactive.jpg" alt="" />
+      {windowWidth <= 425 ? (        
+        <img src={imageInteractiveMobile} alt="" />
+        
       ) : (
-        <img src="../src/assets/images/desktop/image-interactive.jpg" alt="" />
+        <img src={imageInteractiveDesktop} alt="" />
       )}
       <div>
         <h2>The leader in interactive VR</h2>

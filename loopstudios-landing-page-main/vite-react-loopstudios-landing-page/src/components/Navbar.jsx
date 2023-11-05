@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import logo from '../assets/images/logo.svg';
+import hamburger from '../assets/images/icon-hamburger.svg';
+import close from '../assets/images/icon-close.svg';
 
 function Navbar() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth < 1000);
@@ -32,9 +35,9 @@ function Navbar() {
 
   return (
     <nav>
-      <a><img src="../src/assets/images/logo.svg" alt="loopstudios" /></a>
+      <a><img src={logo} alt="loopstudios" /></a>
       {windowWidth ? (
-        <img onClick={handleClick} className="hamburger" src="../src/assets/images/icon-hamburger.svg" alt="nav menu" />
+        <img onClick={handleClick} className="hamburger" src={hamburger} alt="nav menu" />
       ) : (
         <ul className="desktopNav">
           <li>About</li>
@@ -48,8 +51,8 @@ function Navbar() {
       {windowWidth && mobileNavOpen && (
         <div className="mobileNav">
           <div>
-            <img src="../src/assets/images/logo.svg" alt="loopstudios" />            
-            <img onClick={handleClick} src="../src/assets/images/icon-close.svg" alt="close" />
+            <img src={logo} alt="loopstudios" />            
+            <img onClick={handleClick} src={close} alt="close" />
           </div>
           <ul>
             <li>About</li>
