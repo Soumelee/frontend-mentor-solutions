@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+}
+body{
+  font-size: 15px;  
+  font-family: 'Alata', sans-serif;
+  width: 100%;
+}
+h1,h2,h3{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h2{
+  font-size: 3rem;
+}
+.pageOne{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),
+  url('./assets/images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 10rem;
+  padding-bottom: 7rem;
+  /* height: 100vh; */
+}
+.pageOne nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.pageOne nav ul.desktopNav{
+  display: flex;
+  list-style-type: none;  
+  gap: 2rem;
+}
+.pageOne nav .mobileNav{
+  background-color: var(--Black);
+  color: var(--White);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.pageOne nav .mobileNav div{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 5rem 1rem;
+}
+.pageOne nav .mobileNav div img:first-child{
+  width: 10rem;
+}
+.pageOne nav .mobileNav div img:last-child{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.pageOne nav .mobileNav li{
+  margin: 1.5rem 1rem;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.hamburger{
+  width: 2rem;
+}
+.pageOne nav ul.desktopNav li{
+  color: var(--White);
+  cursor: pointer;
+}
+.pageOne h1{
+  color: var(--White);
+  font-weight: 400;
+  border: 2px solid var(--White);
+  width: 650px;
+  padding: 2rem;
+  font-size: 4.5rem;
+  margin-top: 4rem;
+}
+
+nav a img{
+  width: 10rem;
+}
+.about{
+  /* height: 100vh; */
+  padding: 0 10rem;
+  position: relative;
+  margin: 10rem 0;
+}
+.about img{
+  width: 650px;
+}
+.about div{
+  position: absolute;
+  padding: 5rem 5rem 0;
+  left: 50%;
+  top: 40%;
+  background-color: var(--White);
+}
+.about div h2{
+  margin-bottom: 2rem;
+}
+.about div p{
+  color: var(--DarkGray);
+}
+.creations{
+  padding: 0 10rem 10rem;
+  margin-top: 10rem;
+}
+.creations .heading{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.creations .heading button,.mobileButton{
+  background-color: var(--White);
+  color: var(--Black);
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 1rem;
+  padding: 0 3rem;
+  border: 2px solid;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.8s;
+}
+.mobileButton{
+  padding: 1rem 3rem;
+  margin: 1rem auto;
+}
+.creations .heading button:hover,.mobileButton:active{
+  color: var(--White);
+  background-color: var(--Black);
+  border: 2px solid var(--Black);
+}
+.creations .cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.creations .cards .card{
+  height: 450px;
+  max-width: 256px;
+  cursor: pointer;
+  position: relative;
+}
+.creations .cards .card h3{
+  bottom: 2rem;
+  font-size: 2rem;
+  /* left: 2.5rem; */
+  padding: 0 20%;
+  color: var(--White);
+  background: transparent;
+  position: absolute;
+  /* width: inherit; */
+}
+
+footer{
+  background-color: var(--Black);
+  padding: 2rem 10rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--White);
+}
+footer .socials{
+  display: inherit;
+  justify-content: space-between;
+}
+footer .socials ul{
+  display: inherit;
+  gap: 1rem;
+  list-style-type: none;
+}
+footer .socials a img{
+  width: 10rem;
+}
+footer .pages{
+  display: inherit;
+  justify-content: space-between;
+}
+footer .pages ul{
+  display: inherit;
+  list-style-type: none;
+  gap: 1rem;
+}
+footer .pages span{
+  color: var(--DarkGray);
+}
+footer .socialsMobile{
+  display: none;
+}
+@media screen and (max-width: 920px){ 
+  footer .pages span{
+    color: var(--DarkGray);
+    display: none;
+  }
+  footer .pages ul{    
+    flex-direction: column;   
+  }
+  footer .pages, footer .socials{
+    align-self: center;
+    text-align: center;
+  }
+  footer .socials ul{
+    display: none;
+  }
+  footer .socialsMobile{
+    display: block;
+  }
+  footer .socialsMobile ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }  
+}
+.attribution{
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.attribution a{
+  text-decoration: none;
+  color: rgb(181, 124, 149);
+}
+ul li{
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: 0.8s;
+  position: relative;
+}
+/* ul li:hover::after{ */
+ul li:hover{
+  border-bottom: 2px solid;
+  /* content: "";
+  width: 50%;
+  height: 2px;
+  background: var(--White);
+  position: absolute;
+  bottom: -4px;
+  left: 10px; */
+}
+
+@media screen and (max-width: 1400px) {
+  .creations .cards .card h3{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .creations .cards{    
+    grid-template-columns: repeat(3, 1fr);    
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+}
+.creations .mobileButton{
+  display: none;
+}
+@media screen and (max-width: 900px){
+  .creations .cards{    
+    grid-template-columns: repeat(2, 1fr);    
+  }
+  .pageOne h1{
+    font-size: 3rem;
+    width: auto;
+  }
+  .creations .mobileButton{
+    display: block;
+  }
+  .creations .heading button{
+    display: none;
+  }
+  .creations h2{
+    margin: auto;
+  }
+  .about div{
+    position: initial;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+  }
+  .about img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 749px){
+  .pageOne{
+    padding: 0 10%;
+    height: 100vh;
+  }
+  .about,.creations{
+    padding: 0 10%;
+  }
+  footer{
+    padding: 2rem 10%;
+  }
+}
+@media screen and (max-width: 550px){
+  .creations .cards{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .creations .cards .card{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  .pageOne{
+    padding: 0 5%;
+    height: 100vh;
+  }
+  .pageOne h1,h2{
+    font-size: 2rem;
+  }
+  .about,.creations{
+    padding: 0 5%;
+    margin: 5rem 0;
+  }
+  footer{
+    padding: 2rem 5% 0;
+  }
+  .attribution{
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 426px){
+  .creations .cards .card{
+    height: 120px;
+    max-width: 327px;     
+  }
+}
