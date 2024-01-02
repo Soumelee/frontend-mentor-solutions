@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  /* Neutral */
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%); 
+}
+body {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  padding: 4rem 8rem 0rem;
+}
+a{
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+header .w{
+  font-weight: 800;
+  font-size: 3rem;
+  color: black;
+}
+.navbar ul{
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+.navbar ul li a{
+  color: var(--Dark-grayish-blue);
+}
+.navbar ul li a:hover{
+  color: var(--Soft-red);
+}
+.navbar .mobileNav{
+  background-color: var(--Off-white);
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  right: 0;
+  z-index: 2;
+}
+.navbar .mobileNav ul {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.topNews{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.topNews .right{
+  width: 80%;
+  background-color: var(--Very-dark-blue);
+  color: var(--Grayish-blue);
+  padding: 2rem 2rem 0;
+}
+.topNews .right h2{
+  color: var(--Soft-orange);
+  font-size: 2.5rem;
+}
+.topNews .right h3{
+  color: var(--Off-white);
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.topNews .right h3:hover{
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
+.topNews .right ul{
+  list-style-type: none;
+}
+.topNews .right ul li{
+  padding: 2rem 0;
+  border-bottom: 1px solid;
+}
+.topNews .right ul li:last-child {
+  border-bottom: none; 
+}
+.topNews .left .img{
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.topNews .left .below{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+h1{
+  font-size: 3rem;
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+.topNews .left .below div{
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5rem;
+  width: 100%;
+}
+.topNews .left .below div button{
+  border: none;
+  background-color: var(--Soft-red);
+  text-transform: uppercase;
+  color: var(--Off-white);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  letter-spacing: 0.2rem;
+}
+.topNews .left .below div button:hover{
+  cursor: pointer;
+  background-color: var(--Very-dark-blue);
+}
+.trending{
+  margin: 3rem 0;
+  color: var(--Dark-grayish-blue);
+}
+.trending ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style-type: none;
+  line-height: 2rem;
+}
+.trending ul li span{
+  color: var(--Grayish-blue);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.trending ul li h3{
+  color: var(--Very-dark-blue);
+}
+.trending ul li h3:hover{
+  cursor: pointer;
+  color: var(--Soft-red);
+}
+.trending ul li .img{
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.trending ul li{
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1000px){ 
+  body{
+    padding: 3rem 5rem 0rem;
+  }
+  .trending ul{
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .trending ul li .img {
+    min-width: 160px;
+    max-width: 160px;
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 900px){ 
+  .topNews .right{
+    width: 100%;  
+  }
+  .topNews .left .below {
+    gap: 1rem;
+  }  
+}
+@media screen and (max-width: 800px){ 
+  .topNews{
+    flex-direction: column;
+  }  
+  .topNews .left .img {
+    height: 30rem;
+    width: 100%;
+  }
+  .topNews .left .below{
+    display: block;
+  }
+}
+@media screen and (max-width: 500px){ 
+  body{
+    padding: 1rem 2rem 0rem;
+  }
+  .trending ul li .img {
+    min-width: 160px;
+    max-width: 160px;
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 375px){   
+  .trending ul li .img {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .trending ul {
+    line-height: 1.5rem;
+  }
+}
+
+
