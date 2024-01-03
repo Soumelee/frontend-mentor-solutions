@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --eerie-black: #242424ff;
+  --night: #151515ff;
+  --white: #fdfdfdff;
+  --aquamarine: #4ee1a0ff;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--night);
+  font-size: 18px;
+  padding: 2.5rem 0 0;
+  color: rgb(200, 200, 200);
+  /* padding: 0 10rem; */
+  /* apply this individually to the components */
+}
+
+a,
+h1,
+h2,
+h3 {
+  color: var(--white);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+
+.topbar a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.topbar div {
+  display: flex;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  width: 72%;
+}
+.hero h1{
+  text-align: left;
+}
+
+.hero {
+  padding: 7rem 0 10rem;
+  border-bottom: 0.1rem solid rgb(200, 200, 200);
+  margin: 0 10rem;
+}
+
+.hero h1 span {
+  border-bottom: 0.5rem solid var(--aquamarine);
+}
+
+.hero p {
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+
+.contactButton {
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid var(--aquamarine);
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contactButton:hover {
+  color: var(--aquamarine);
+}
+
+.hero img {
+  position: absolute;
+}
+
+.hero .pp {
+  top: 0;
+  right: 10rem;
+  z-index: -1;
+  max-height: 45rem;
+}
+
+.hero .circle {
+  top: 500px;
+  right: 34rem;
+}
+
+.hero .rings {
+  left: -100px;
+  top: 140px;
+}
+
+.experience ul {
+  margin: 4rem 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /*basically important for gap bw the rows*/
+  justify-content: space-between;
+}
+
+.experience ul li {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Adjust the width of each item */
+}
+
+.experience h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.experience {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10rem;
+}
+
+.experience .rings {
+  position: absolute;
+  bottom: 0;
+  right: -260px;
+}
+
+.projects {
+  margin: 0 10rem;
+}
+
+.projects .heading {
+  margin: 5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .heading h2 {
+  font-size: 5rem
+}
+
+.projects .heading a {
+  height: min-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.projects .showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /*basically important for gap bw the rows*/
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.projects .showcase .project {
+  flex: 0 0 calc(50% - 1rem);
+  /* Adjust the width of each item */
+  line-height: 2rem;
+  margin-top: 4rem;
+}
+
+.projects .showcase .project img {
+  width: 100%;
+}
+
+.projects .showcase .project .technology {
+  word-spacing: 10px;
+}
+
+.projects .showcase .project .image {
+  position: relative;
+}
+
+.projects .showcase .project .image:hover .projectHovered {
+  display: flex;
+}
+
+.projects .showcase .project .image .projectHovered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--night);
+  opacity: 0.8;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects .showcase .project .image .projectHovered a {
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  border-bottom: 0.2rem solid var(--aquamarine);
+}
+
+.projects .showcase .project .image .projectHovered a:hover {
+  color: var(--aquamarine);
+  transition: 0.2s ease;
+}
+
+.contact div:first-child h2 {
+  font-size: 5rem;
+}
+
+.contact .up {
+  margin: 0 10rem;
+  border-bottom: 0.1rem solid rgb(200, 200, 200);
+  padding: 5rem 0;
+  display: flex;
+  gap: 5rem;
+}
+
+.contact .up div {
+  width: 50%;
+}
+
+.contact .up div p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.contact .up form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact .up form input,
+.contact .up form textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgb(200, 200, 200);
+  color: inherit;
+}
+
+.contact .up form .form__button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid var(--aquamarine);
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+  background-color: transparent;
+  color: var(--white);
+  width: 10rem;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.contact .up form .form__button:hover {
+  color: var(--aquamarine);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--eerie-black);
+  margin-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .topbar {
+    padding: 0 5rem;
+  }
+
+  .hero {
+    margin: 0 5rem;
+  }
+
+  .hero .pp {
+    right: 5rem;
+  }
+
+  .experience {
+    padding: 0 5rem;
+  }
+
+  .projects {
+    margin: 0 5rem;
+  }
+
+  .contact .up {
+    margin: 0 5rem;
+  }
+  .hero .circle {
+    right: 29rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topbar {
+    padding: 0 2rem;
+  }
+
+  .hero {
+    margin: 0 2rem;
+  }
+
+  .hero .pp {
+    right: 2rem;
+  }
+  .hero .circle {
+    right: 26rem;
+  }
+  .experience {
+    padding: 0 2rem;
+  }
+
+  .projects {
+    margin: 0 2rem;
+  }
+
+  .contact .up {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero .pp {
+    right: 0;
+  }
+  .hero .circle {
+    right: 24rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .experience ul li {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .contact .up {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1 span {
+    width: max-content;
+    display: block;
+  }
+  .contact .up div {
+    width: 90%;
+  }
+  .contact .up form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero .pp{
+    width: 50%;
+  }
+  .hero{
+    padding-top: 3rem;
+  }
+  body{
+    position: relative;
+    overflow-x: hidden;
+  }
+  .hero .circle {
+    right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .hero h1{
+    text-align: center;
+  }
+  .hero .pp{
+    position: initial;
+  }
+}
+@media screen and (max-width: 700px){
+  .experience ul {
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+  }
+  .experience ul li {
+    flex: initial;
+  }
+  .projects .showcase .project {
+    flex: initial;
+  }
+  .hero .pp{
+    /* height: 40vh; */
+    width: initial;
+  }
+  .hero h1 span{
+    display: initial;
+  }
+  .hero h1{
+    width: initial;
+  }
+  .contact div:first-child h2,.projects .heading h2,.hero h1,.experience h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .topbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero .pp{
+    height: 50vh;
+  }
+  .contact div:first-child h2,.projects .heading h2,.hero h1,.experience h2 {
+    font-size: 2rem;
+  }
+  .hero .rings {
+    left: -300px;
+  }
+  .projects .heading a {
+    font-size: 0.6rem;
+  }
+}
