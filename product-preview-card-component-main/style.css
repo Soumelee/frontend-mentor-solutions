@@ -16,9 +16,8 @@
 .attribution {
   font-size: smaller;
   text-align: center;
-  position: absolute;
-  bottom: 0;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -26,6 +25,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 14px;
