@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,21 +7,20 @@ function Card(props) {
     return (
         <div
             className='card'
-            style={{                
-                background: isHovered
+            style={{backgroundSize: 'cover', backgroundRepeat: 'no-repeat',          
+                backgroundImage: isHovered
                     ? 
                         `linear-gradient(
                             rgba(255, 255, 255, 0.6), 
                             rgba(255, 255, 255, 0.6)
                         ),
-                        url(${props.img}) no-repeat`
+                        url(${props.img})`
                     : 
                         `linear-gradient(
                             rgba(0, 0, 0, 0), 
                             rgba(0, 0, 0, 0.5)
                         ),
-                        url(${props.img}) no-repeat`,
-                        backgroundSize: 'cover'
+                        url(${props.img})`                        
             }}
             onMouseOver={() => setIsHovered(true)}
             onMouseOut={() => setIsHovered(false)}
