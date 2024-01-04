@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 body .attribution {
   position: absolute;
@@ -50,12 +51,18 @@ body .card {
   display: flex;
   align-items: center;
   height: 450px;
-  width: 650px;
+  max-width: 650px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body .card {
     flex-direction: column;
     height: 100%;
+  }
+  body .card .left{
+    width: 100%;
+  }
+  body .card .right{
+    width: 100%;
   }
 }
 body .left {
@@ -104,6 +111,9 @@ body .left .result {
 @media (max-width: 375px) {
   body .left .result {
     margin: 1rem;
+  }
+  body .right ul li{
+    line-height: 2rem;
   }
 }
 body .left .result span {
