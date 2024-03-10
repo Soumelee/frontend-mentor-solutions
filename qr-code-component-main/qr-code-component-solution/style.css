@@ -33,17 +33,22 @@ body {
 .card img {
     height: 288px;
     width: 288px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .para{
-    padding: 24px 0;
+    height: 129px;
+    width: 288px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 h1 {
     font-size: 22px;
     font-weight: 700;
     color: var(--Darkblue);
     text-align: center;
-    margin-bottom: 16px;
 }
 
 p {
