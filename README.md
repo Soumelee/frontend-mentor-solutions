@@ -10,7 +10,7 @@
 <br> [loopstudios-landing-page](https://loopstudios-landing-page-soumelee.netlify.app/) React + Vite
 <br> [news-homepage-main](https://659431c51d9dd7007d720db3--whimsical-llama-8f1c8e.netlify.app/) React + Vite
 <br> [single-page-developer-portfolio](https://659581f415f75214df34cad6--unrivaled-parfait-1a95be.netlify.app/) React + Vite
-<br> [Time tracking Dashboard](https://6605527ec3ba351aca7474db--gregarious-creponne-251b6f.netlify.app/) Vite, ReactJS, Tailwind CSS
+<br> [Time tracking Dashboard](https://majestic-stardust-89a48a.netlify.app/) Vite, ReactJS, Tailwind CSS
 
 *Intermediate*
 
