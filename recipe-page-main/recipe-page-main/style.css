@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif';
+}
+
+figure img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+body {
+    padding-top: 7.7rem;
+    padding-bottom: 9.7rem;
+    font-weight: 400;
+    background-color: var(--eggshell);
+    color: var(--wenge-brown);
+}
+
+.container {
+    max-width: 736px;
+    padding: 40px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+h2{
+    color: var(--nutmeg);
+}
+main h1 {
+    font-size: 2.5rem;
+    margin-top: 1.6rem;
+    color: var(--dark-charcoal);
+}
+
+main p {
+    margin-top: 1.1rem;
+    line-height: 1.5rem;
+}
+
+main .preparation {
+    margin-left: 1.7rem;
+    margin-top: 3.5rem;
+}
+
+main .preparation h3 {
+    font-size: 20px;
+    color: var(--dark-raspberry);
+}
+
+main .preparation ul {
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 2rem;
+}
+
+main .preparation ul li {
+    padding-left: 1rem;
+}
+
+main .preparation ul li strong {
+    font-weight: 700;
+}
+
+main .ingredients h2 {
+    font-size: 1.8rem;
+    margin-top: 3.1rem;
+    letter-spacing: -0.4px;
+}
+
+main .ingredients ul {
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    line-height: 2rem;
+}
+
+main .ingredients ul li {
+    padding-left: 1rem;
+}
+
+main .instructions h2 {
+    font-size: 28px;
+    margin-top: 3.5rem;
+}
+
+main .instructions ul {
+    list-style-type: none;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+main .instructions ul li {
+    /* margin-right: 1.2rem ; */
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+
+main .instructions ul li span {
+    max-width: 10px;
+}
+
+main .instructions ul li p {
+    margin-left: 0.4rem;
+    margin-top: initial;
+    line-height: 1.5rem;
+}
+
+main .nutrition {
+    margin-top: 3.45rem;
+}
+
+main .nutrition h2 {
+    font-size: 1.8rem;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+}
+
+main .nutrition table {
+    margin-top: 1.4rem;
+    margin-left: 1.8rem;
+}
+
+main .nutrition table tr td:first-child {
+    width: 18.9rem;
+}
+
+main .nutrition table tr {
+    height: 3rem;
+    float: inline-start;
+}
+main .nutrition table tr td:last-child{
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+    body{
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+    }
+    main{
+        padding: .2rem 2rem;
+    }
+    main h1{
+        font-size: 2.2rem;
+        margin-top: 2.1rem;
+        letter-spacing: .4px;
+        line-height: 2.2rem;
+    }
+    main p{
+        margin-top: 1.5rem;
+    }
+    main .preparation{
+        margin-left: 1.5rem;
+        margin-top: 3.4rem;
+    }
+    main .preparation h3{
+        letter-spacing: -0.2px;
+    }
+    main .preparation ul{
+        line-height: 1.5rem;
+        margin-top: 13px;
+        padding-right: 2rem;
+    }
+    main .preparation ul li{
+        margin-bottom: 8px;
+    }
+    main .instructions h2{
+        margin-top: 3rem;
+    }
+    main .instructions ul{
+        margin-top: 1.1rem;
+    }
+    main .nutrition{
+        margin-top: 3.6rem;
+    }
+    main .nutrition p{
+        margin-top: 1rem;
+    }
+    main .nutrition table{
+        margin-top: 1.45rem;
+    }
+    main .nutrition table tr td:first-child {
+        width: 8rem;
+    }
+}
